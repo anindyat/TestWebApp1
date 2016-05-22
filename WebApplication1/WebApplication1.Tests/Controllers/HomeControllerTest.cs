@@ -50,5 +50,18 @@ namespace WebApplication1.Tests.Controllers
             // Assert
             Assert.IsNotNull(result);
         }
+
+        [TestMethod]
+        public void Contact1()
+        {
+            // Arrange
+            HomeController controller = new HomeController();
+
+            // Act
+            ViewResult result = controller.Contact() as ViewResult;
+
+            // Assert
+            Assert.IsNotNull(result);
+        }
     }
 }
